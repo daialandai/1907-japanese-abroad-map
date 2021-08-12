@@ -1,0 +1,881 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.9,
+          116.41
+        ]
+      },
+      "properties": {
+        "name": {
+          "eng": "Beijing",
+          "sino": "北京"
+        },
+        "native_pop": 1100000,
+        "native_name": "Chinese",
+        "foreign_pop": 1900,
+        "japan_pop": 583,
+        "taiwan_pop": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.34,
+          117.36
+        ]
+      },
+      "properties": {
+        "name": {
+          "eng": "Tianjin",
+          "sino": "天津"
+        },
+        "native_pop": 750000,
+        "native_name": "Chinese",
+        "foreign_pop": 2700,
+        "japan_pop": 1649,
+        "taiwan_pop": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.54,
+          12.4
+        ]
+      },
+      "properties": {
+        "name": {
+          "eng": "Zhifu (Yantai)",
+          "sino": "芝罘（煙臺）"
+        },
+        "native_pop": 80000,
+        "native_name": "Chinese",
+        "foreign_pop": 180,
+        "japan_pop": 569,
+        "taiwan_pop": null
+      }
+    },    
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.07,
+          120.38
+        ]
+      },
+      "properties": {
+        "name": {
+          "eng": "Qingdao",
+          "sino": "青島"
+        },
+        "native_pop": null,
+        "native_name": "Chinese",
+        "foreign_pop": null,
+        "japan_pop": 199,
+        "taiwan_pop": null
+      }
+    },    
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.23,
+          121.47
+        ]
+      },
+      "properties": {
+        "name": {
+          "eng": "Shanghai",
+          "sino": "上海"
+        },
+        "native_pop": 700000,
+        "native_name": "Chinese",
+        "foreign_pop": 9990,
+        "japan_pop": 5563,
+        "taiwan_pop": null
+      }
+    },    
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.299,
+          120.585
+        ]
+      },
+      "properties": {
+        "name": {
+          "eng": "Suzhou",
+          "sino": "蘇州"
+        },
+        "native_pop": 500000,
+        "native_name": "Chinese",
+        "foreign_pop": 80,
+        "japan_pop": 100,
+        "taiwan_pop": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.274,
+          120.155
+        ]
+      },
+      "properties": {
+        "name": {
+          "eng": "杭州",
+          "sino": "Hangzhou"
+        },
+        "native_pop": 350000,
+        "native_name": "Chinese",
+        "foreign_pop": 90,
+        "japan_pop": 77,
+        "taiwan_pop": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.188,
+          119.426
+        ]
+      },
+      "properties": {
+        "name": {
+          "eng": "Zhenjiang",
+          "sino": "鎮江"
+        },
+        "native_pop": 168000,
+        "native_name": "Chinese",
+        "foreign_pop": null,
+        "japan_pop": 28,
+        "taiwan_pop": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.06,
+          118.797
+        ]
+      },
+      "properties": {
+        "name": {
+          "eng": "Nanjing",
+          "sino": "南京"
+        },
+        "native_pop": 300000,
+        "native_name": "Chinese",
+        "foreign_pop": 120,
+        "japan_pop": 72,
+        "taiwan_pop": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.593,
+          114.306
+        ]
+      },
+      "properties": {
+        "name": {
+          "eng": "Wuhan",
+          "sino": "湖北"
+        },
+        "native_pop": 950000,
+        "native_name": "Chinese",
+        "foreign_pop": 1600,
+        "japan_pop": 866,
+        "taiwan_pop": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.3111,
+          112.2556
+        ]
+      },
+      "properties": {
+        "name": {
+          "eng": "Shashi (Jingzhou)",
+          "sino": "沙市（荊州）"
+        },
+        "native_pop": 80000,
+        "native_name": "Chinese",
+        "foreign_pop": null,
+        "japan_pop": 9,
+        "taiwan_pop": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.2282,
+          112.9388
+        ]
+      },
+      "properties": {
+        "name": {
+          "eng": "Changsha",
+          "sino": "長沙"
+        },
+        "native_pop": null,
+        "native_name": "Chinese",
+        "foreign_pop": null,
+        "japan_pop": 91,
+        "taiwan_pop": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.692,
+          111.2865
+        ]
+      },
+      "properties": {
+        "name": {
+          "eng": "Yichang",
+          "sino": "宜昌"
+        },
+        "native_pop": null,
+        "native_name": "Chinese",
+        "foreign_pop": null,
+        "japan_pop": 2,
+        "taiwan_pop": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.4316,
+          106.9123
+        ]
+      },
+      "properties": {
+        "name": {
+          "eng": "Chongqing",
+          "sino": "重慶"
+        },
+        "native_pop": 620000,
+        "native_name": "Chinese",
+        "foreign_pop": null,
+        "japan_pop": 85,
+        "taiwan_pop": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.0745,
+          119.2965
+        ]
+      },
+      "properties": {
+        "name": {
+          "eng": "Fuzhou",
+          "sino": "福州"
+        },
+        "native_pop": 600000,
+        "native_name": "Chinese",
+        "foreign_pop": 60,
+        "japan_pop": 134,
+        "taiwan_pop": 134
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.48,
+          118.0894
+        ]
+      },
+      "properties": {
+        "name": {
+          "eng": "Xiamen",
+          "sino": "廈門"
+        },
+        "native_pop": 120000,
+        "native_name": "Chinese",
+        "foreign_pop": 40,
+        "japan_pop": 278,
+        "taiwan_pop": 1228
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.3541,
+          116.682
+        ]
+      },
+      "properties": {
+        "name": {
+          "eng": "Shantou",
+          "sino": "汕頭"
+        },
+        "native_pop": 60000,
+        "native_name": "Chinese",
+        "foreign_pop": null,
+        "japan_pop": 152,
+        "taiwan_pop": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.379,
+          113.7633
+        ]
+      },
+      "properties": {
+        "name": {
+          "eng": "Guangdong",
+          "sino": "廣東"
+        },
+        "native_pop": 1000000,
+        "native_name": "Chinese",
+        "foreign_pop": 100,
+        "japan_pop": 50,
+        "taiwan_pop": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.6674,
+          122.2351
+        ]
+      },
+      "properties": {
+        "name": {
+          "eng": "Niuzhuang (Yingkou)",
+          "sino": "牛莊（營口）"
+        },
+        "native_pop": 80000,
+        "native_name": "Chinese",
+        "foreign_pop": 170,
+        "japan_pop": 7391,
+        "taiwan_pop": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.8517,
+          121.262
+        ]
+      },
+      "properties": {
+        "name": {
+          "eng": "Lüshun (Port Arthur)",
+          "sino": "旅順"
+        },
+        "native_pop": null,
+        "native_name": "Chinese",
+        "foreign_pop": null,
+        "japan_pop": 2100,
+        "taiwan_pop": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.914,
+          121.6147
+        ]
+      },
+      "properties": {
+        "name": {
+          "eng": "Dalian",
+          "sino": "大連"
+        },
+        "native_pop": null,
+        "native_name": "Chinese",
+        "foreign_pop": null,
+        "japan_pop": 6000,
+        "taiwan_pop": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.8057,
+          123.4315
+        ]
+      },
+      "properties": {
+        "name": {
+          "eng": "Fengtian (Shenyang)",
+          "sino": "奉天（瀋陽）"
+        },
+        "native_pop": 171000,
+        "native_name": "Chinese",
+        "foreign_pop": null,
+        "japan_pop": 1600,
+        "taiwan_pop": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.0008,
+          124.3545
+        ]
+      },
+      "properties": {
+        "name": {
+          "eng": "Andong (Dandong)",
+          "sino": "安東（丹東）"
+        },
+        "native_pop": 22000,
+        "native_name": "Chinese",
+        "foreign_pop": null,
+        "japan_pop": 6000,
+        "taiwan_pop": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          42.2238,
+          123.726
+        ]
+      },
+      "properties": {
+        "name": {
+          "eng": "Tieling",
+          "sino": "鐵嶺"
+        },
+        "native_pop": null,
+        "native_name": "Chinese",
+        "foreign_pop": null,
+        "japan_pop": 1445,
+        "taiwan_pop": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.2672,
+          123.2369
+        ]
+      },
+      "properties": {
+        "name": {
+          "eng": "Liaoyang",
+          "sino": "遼陽"
+        },
+        "native_pop": null,
+        "native_name": "Chinese",
+        "foreign_pop": null,
+        "japan_pop": 3,
+        "taiwan_pop": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.8171,
+          125.3235
+        ]
+      },
+      "properties": {
+        "name": {
+          "eng": "Changchun",
+          "sino": "長春"
+        },
+        "native_pop": null,
+        "native_name": "Chinese",
+        "foreign_pop": null,
+        "japan_pop": 200,
+        "taiwan_pop": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.5665,
+          126.978
+        ]
+      },
+      "properties": {
+        "name": {
+          "eng": "Seoul",
+          "sino": "京城（首爾）"
+        },
+        "native_pop": null,
+        "native_name": "Chinese",
+        "foreign_pop": null,
+        "japan_pop": 16328,
+        "taiwan_pop": null,
+        "chinese_pop": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.4563,
+          126.7052
+        ]
+      },
+      "properties": {
+        "name": {
+          "eng": "Incheon",
+          "sino": "仁川"
+        },
+        "native_pop": 82400,
+        "native_name": "Korean",
+        "foreign_pop": 53,
+        "japan_pop": 13286,
+        "taiwan_pop": null,
+        "chinese_pop": 1366
+      }
+    },
+    
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.1796,
+          129.0756
+        ]
+      },
+      "properties": {
+        "name": {
+          "eng": "Busan",
+          "sino": "釜山"
+        },
+        "native_pop": null,
+        "native_name": "Korean",
+        "foreign_pop": null,
+        "japan_pop": 20612,
+        "taiwan_pop": null,
+        "chinese_pop": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.1539,
+          127.4460
+        ]
+      },
+      "properties": {
+        "name": {
+          "eng": "Wonsan",
+          "sino": "元山"
+        },
+        "native_pop": 7346,
+        "native_name": "Korean",
+        "foreign_pop": 224,
+        "japan_pop": 4896,
+        "taiwan_pop": null,
+        "chinese_pop": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.6682,
+          129.1903
+        ]
+      },
+      "properties": {
+        "name": {
+          "eng": "Sŏngjin (Kimchaek)",
+          "sino": "城津"
+        },
+        "native_pop": null,
+        "native_name": "Korean",
+        "foreign_pop": null,
+        "japan_pop": 748,
+        "taiwan_pop": null,
+        "chinese_pop": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.8118,
+          126.3922
+        ]
+      },
+      "properties": {
+        "name": {
+          "eng": "Mokpo",
+          "sino": "木浦"
+        },
+        "native_pop": null,
+        "native_name": "Korean",
+        "foreign_pop": null,
+        "japan_pop": 3104,
+        "taiwan_pop": null,
+        "chinese_pop": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.9677,
+          126.7366
+        ]
+      },
+      "properties": {
+        "name": {
+          "eng": "Gunsan",
+          "sino": "群山"
+        },
+        "native_pop": null,
+        "native_name": "Korean",
+        "foreign_pop": null,
+        "japan_pop": 3216,
+        "taiwan_pop": null,
+        "chinese_pop": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.2135,
+          128.5814
+        ]
+      },
+      "properties": {
+        "name": {
+          "eng": "Masan (Changwon)",
+          "sino": "馬山（昌源）"
+        },
+        "native_pop": null,
+        "native_name": "Korean",
+        "foreign_pop": null,
+        "japan_pop": 3147,
+        "taiwan_pop": null,
+        "chinese_pop": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.7523,
+          125.3247
+        ]
+      },
+      "properties": {
+        "name": {
+          "eng": "Chinnampo (Nampo)",
+          "sino": "顛南浦（南浦）"
+        },
+        "native_pop": null,
+        "native_name": "Korean",
+        "foreign_pop": null,
+        "japan_pop": 2819,
+        "taiwan_pop": null,
+        "chinese_pop": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.0392,
+          125.7625
+        ]
+      },
+      "properties": {
+        "name": {
+          "eng": "Pyongyang",
+          "sino": "平壤"
+        },
+        "native_pop": null,
+        "native_name": "Korean",
+        "foreign_pop": null,
+        "japan_pop": 5711,
+        "taiwan_pop": null,
+        "chinese_pop": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.3193,
+          114.1694
+        ]
+      },
+      "properties": {
+        "name": {
+          "eng": "British Hong Kong",
+          "sino": "英領香港"
+        },
+        "native_pop": 274543,
+        "native_name": "Chinese",
+        "foreign_pop": 5765,
+        "japan_pop": 9610,
+        "indian_pop": 1730
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.5995,
+          120.9842
+        ]
+      },
+      "properties": {
+        "name": {
+          "eng": "Manila",
+          "sino": "馬尼剌（馬尼拉）"
+        },
+        "native_pop": null,
+        "native_name": null,
+        "foreign_pop": null,
+        "japan_pop": 419,
+        "taiwan_pop": null,
+        "chinese_pop": 8635
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.7469,
+          106.6763
+        ]
+      },
+      "properties": {
+        "name": {
+          "eng": "Saigon",
+          "sino": "西貢"
+        },
+        "native_pop": null,
+        "native_name": null,
+        "foreign_pop": 20,
+        "japan_pop": 100,
+        "taiwan_pop": null,
+        "chinese_pop": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.1332,
+          131.9113
+        ]
+      },
+      "properties": {
+        "name": {
+          "eng": "Vladivostok",
+          "sino": "浦潮"
+        },
+        "native_pop": null,
+        "native_name": null,
+        "foreign_pop": null,
+        "japan_pop": 3500,
+        "taiwan_pop": null,
+        "chinese_pop": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.7563,
+          100.5018
+        ]
+      },
+      "properties": {
+        "name": {
+          "eng": "Bangkok",
+          "sino": "盤谷（曼谷）"
+        },
+        "native_pop": null,
+        "native_name": null,
+        "foreign_pop": null,
+        "japan_pop": 33,
+        "taiwan_pop": null,
+        "chinese_pop": null
+      }
+    }
+  ]
+}
