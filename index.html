@@ -22,6 +22,14 @@
       height: 100%;
       width: 100%;
     }
+    .mycluster {
+      width: 40px;
+      height: 40px;
+      background-color: white;
+      text-align: center;
+      font-size: 24px;
+      color: red;
+    }
   </style>
 </head>
 
@@ -57,7 +65,17 @@
 	  attribution: 'Tiles &copy; Esri &mdash; National Geographic, Esri, DeLorme, NAVTEQ, UNEP-WCMC, USGS, NASA, ESA, METI, NRCAN, GEBCO, NOAA, iPC',  
 	  maxZoom: 11 }).addTo(mymap);
 	  
-    var markers = L.markerClusterGroup();
+    var markers = L.markerClusterGroup({
+        maxClusterRadius: 120,
+	iconCreateFunction: function (cluster) {
+		var markers = cluster.getAllChildMarkers();
+		var n = 0;
+		for (var i = 0; i < markers.length; i++) {
+			n += markers[i].number;
+		}
+		return L.divIcon({ html: n, className: 'mycluster', iconSize: L.point(40, 40) });
+	},
+    });
     loadJSON("data.json",
         function(data) {
 	    console.log(data);
