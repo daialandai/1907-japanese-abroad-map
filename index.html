@@ -66,9 +66,8 @@
 		var coords = feature["geometry"]["coordinates"];
 		var txt = feature["properties"]["name"]["eng"];
 		// ff
-		var marker = L.marker(new L.LatLng(coords[1], coords[0]), { title: txt });
+		var marker = L.marker(new L.LatLng(coords[1], coords[0]), { title: txt, number: feature["properties"]["japan_pop"] });
 		marker.bindPopup(txt);
-		marker.number = feature["properties"]["japan_pop"];
 		markers.addLayer(marker);
 	    }
 	    mymap.addLayer(markers);
