@@ -89,7 +89,8 @@
 		var txt = feature["properties"]["name"]["eng"];
 		// ff
 		console.log(feature["properties"]["japan_pop"]);
-		var marker = L.marker(new L.LatLng(coords[1], coords[0]), { title: txt, number: feature["properties"]["japan_pop"] });
+		var marker = L.marker(new L.LatLng(coords[1], coords[0]), { title: txt });
+		marker.number = feature["properties"]["japan_pop"];
 		marker.bindPopup(txt);
 		markers.addLayer(marker);
 	    }
