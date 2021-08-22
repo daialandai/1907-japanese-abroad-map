@@ -61,6 +61,16 @@
     loadJSON("data.json",
         function(data) {
 	    console.log(data);
+	    for (var i=0; i<data["features"].length; i++) {
+		var feature = data["features"][i];
+		var coords = feature["geometry"]["coordinates"];
+		var txt = feature["properties"]["name"]["eng"];
+		// ff
+		var marker = L.marker(new L.LatLng(coords[1], coords[0]), { title: txt });
+		marker.bindPopup(txt);
+		markers.addLayer(marker);
+	    }
+	    map.addLayer(markers);
     	},
 	function(xhr) {
 	    console.log("error");
