@@ -68,6 +68,7 @@
 		// ff
 		var marker = L.marker(new L.LatLng(coords[1], coords[0]), { title: txt });
 		marker.bindPopup(txt);
+		marker.number = feature["properties"]["japan_pop"];
 		markers.addLayer(marker);
 	    }
 	    mymap.addLayer(markers);
