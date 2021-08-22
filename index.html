@@ -70,8 +70,10 @@
 	iconCreateFunction: function (cluster) {
 		var markers = cluster.getAllChildMarkers();
 		var n = 0;
-		for (var i = 0; i < markers.length; i++) {
-			n += markers[i].number;
+		for (var x = 0; x < markers.length; x++) {
+			n += markers[x].number;
+			console.log("marker number");
+			console.log(markers[x].number);
 		}
 		console.log("marker n");
 		console.log(n);
