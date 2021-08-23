@@ -68,20 +68,7 @@
     var markers = L.markerClusterGroup({
         maxClusterRadius: 50,
 	singleMarkerMode: true,
-	iconCreateFunction: function (cluster) {
-		var childCount = cluster.getChildCount();
-
-		var c = ' marker-cluster-';
-		if (childCount < 10) {
-			c += 'small';
-		} else if (childCount < 100) {
-			c += 'medium';
-		} else {
-			c += 'large';
-		}
-
-		return new L.DivIcon({ html: '<div><span>' + childCount + '</span></div>', className: 'marker-cluster' + c, iconSize: new L.Point(40, 40) });
-		
+	iconCreateFunction: function (cluster) {		
 		var markers = cluster.getAllChildMarkers();
 		var n = 0;
 		for (var x = 0; x < markers.length; x++) {
