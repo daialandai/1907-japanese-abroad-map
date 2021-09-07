@@ -37,6 +37,16 @@
       top: 4%;
       right: 3%;
       z-index: 2147483638;
+      visibility: visible;	   
+    }
+    #minibox {
+      position: absolute;
+      width: 5%;
+      height: 5%;
+      top: 4%;
+      right: 3%;
+      z-index: 2147483637;
+      visibility: hidden;
     }
 	  
   </style>
@@ -47,10 +57,15 @@
   <div id="mapid"></div>
 
   <div id="infobox" class="box">
-	  I am a box. Hear me roar!
+    <button class="button" onclick="toggleShow(false)">Hide</button>
+    <span>I am a box. Hear me roar!</span>
+  </div>
+  <div id="minibox" class="box">
+     <button class="button" onclick="toggleShow(true)">Show</button>
   </div>
 	
   <script>
+// https://stackoverflow.com/a/18278346 attribution for loadJSON()	  
     function loadJSON(path, success, error){
         var xhr = new XMLHttpRequest();
         xhr.onreadystatechange = function()
@@ -69,11 +84,25 @@
     xhr.open("GET", path, true);
     xhr.send();
 }
+    function toggleShow(b) {
+	var infobox = document.getElementById("infobox");
+	var minibox = document.getElementById("minibox");
+	if(b) {
+	    infobox.style.visibility = "visible";
+	    minibox.style.visibility = "hidden";
+	}
+	else {
+	    infobox.style.visibility = "hidden";
+	    minibox.style.visibility = "visible";
+	}
+    }
     var mymap = L.map('mapid').setView([32.17, 126.42], 4);
+	  
 //   L.tileLayer('https://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png', {
 // 	  maxZoom: 18,
 // 	  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 //   }).addTo(mymap);
+	  
     L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}', {
 	  attribution: 'Tiles &copy; Esri &mdash; National Geographic, Esri, DeLorme, NAVTEQ, UNEP-WCMC, USGS, NASA, ESA, METI, NRCAN, GEBCO, NOAA, iPC',  
 	  maxZoom: 11 }).addTo(mymap);
