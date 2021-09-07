@@ -38,6 +38,10 @@
 
   <div id="mapid"></div>
 
+  <div class="box">
+	  I am a box. Hear me roar!
+  </div>
+	
   <script>
     function loadJSON(path, success, error){
         var xhr = new XMLHttpRequest();
@@ -57,7 +61,7 @@
     xhr.open("GET", path, true);
     xhr.send();
 }
-    var mymap = L.map('mapid').setView([32.17, 126.42], 4.5);
+    var mymap = L.map('mapid').setView([32.17, 126.42], 4);
 //   L.tileLayer('https://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png', {
 // 	  maxZoom: 18,
 // 	  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
