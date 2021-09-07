@@ -45,8 +45,14 @@
       height: 5%;
       top: 4%;
       right: 3%;
+      border-radius: 50%:
       z-index: 2147483637;
       visibility: hidden;
+    }
+    #showbutton {
+      position: absolute;
+      top: 3%;
+      right: 3%;
     }
 	  
   </style>
@@ -57,12 +63,10 @@
   <div id="mapid"></div>
 
   <div id="infobox" class="box">
-    <button class="button" onclick="toggleShow(false)">Hide</button>
+    <button class="button" id="showbutton" onclick="toggleShow(false)">Hide</button>
     <span>I am a box. Hear me roar!</span>
   </div>
-  <div id="minibox" class="box">
-     <button class="button" onclick="toggleShow(true)">Show</button>
-  </div>
+  <button class="button" id="minibox" onclick="toggleShow(true)">Show</button>
 	
   <script>
 // https://stackoverflow.com/a/18278346 attribution for loadJSON()	  
