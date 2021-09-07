@@ -45,7 +45,7 @@
 /*       height: 5%; */
       top: 7%;
       right: 6%;
-      border-radius: 50%;
+/*       border-radius: 50%; */
       z-index: 2147483638;
       visibility: hidden;
     }
@@ -64,7 +64,13 @@
 
   <div id="infobox" class="box">
     <button class="button" id="showbutton" onclick="toggleShow(false)">Hide</button>
-    <span>I am a box. Hear me roar!</span>
+    <div class="content">
+      <p class="title is-1">東亜各港日本人職業姓名録</p>
+      <p class="subtitle is-5">Record of the Names and Occupations of Japanese in the Various Ports of East Asia</p>
+      <p>明治四十年 1907</p>
+      <p>曽根俊虎 Sone Toshitora</p>
+      <p>Original source: <a href="https://dl.ndl.go.jp/info:ndljp/pid/994851">National Diet Library Digital Collections</a></p>	    
+    </div>	   
   </div>
   <button class="button" id="minibox" onclick="toggleShow(true)">Show</button>
 	
