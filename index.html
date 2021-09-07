@@ -124,7 +124,7 @@
         var map_keys = Object.keys(dataKeyMap);
         for (var i=0; i<map_keys.length; i++) {
             var map_k = map_keys[i];
-            if((map_k in f) and (f[map_k] != null)) {
+            if((map_k in f) && (f[map_k] != null)) {
                 pop_html += '<p>' + dataKeyMap[map_k] + ':' + f[map_k].toString() + '</p>'; 
             }
         }
