@@ -143,6 +143,7 @@
     var markers = L.markerClusterGroup({
         maxClusterRadius: 50,
 	singleMarkerMode: true,
+	polygonOptions: { stroke: false, color: 'transparent' },
 	iconCreateFunction: function (cluster) {		
 		var markers = cluster.getAllChildMarkers();
 		var n = 0;
