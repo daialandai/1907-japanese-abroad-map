@@ -126,10 +126,10 @@
             var map_k = map_keys[i];
             if((map_k in f) && (f[map_k] != null)) {
 		        if((map_k == "native_pop") && (f["native_name"] != null)) {
-			        pop_html += '<p>' + f["native_name"] + ' population:';
+			        pop_html += '<p>' + f["native_name"] + ' population: ';
                 }
                 else {
-                    pop_html += '<p>' + dataKeyMap[map_k] + ':';
+                    pop_html += '<p>' + dataKeyMap[map_k] + ': ';
                 }
                 pop_html += f[map_k].toString() + '</p>'; 
             }
