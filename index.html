@@ -172,9 +172,9 @@
         var name_html = '<h6 class="title is-6">' + f["name"]["sino"] + ' ' + f["name"]["eng"] + '</h6>&nbsp;';
         var src_html = '<p><a href="https://dl.ndl.go.jp/info:ndljp/pid/994851/' + f["source_pg"].toString() + 
                        '">Link to source and further population information</a></p>';
-        var pop_html = '<table class="table is-striped is-fullwidth><tbody>'; // + 
-//                        '<thead><tr><th>Type</th><th>Population</th></tr></thead>' +
-//                        '<tbody>';
+        var pop_html = '<table class="table is-striped is-fullwidth"><tbody>' + 
+                       '<thead><tr><th>Type</th><th>Population</th></tr></thead>' +
+                       '<tbody>';
         var map_keys = Object.keys(dataKeyMap);
         for (var i=0; i<map_keys.length; i++) {
             var map_k = map_keys[i];
@@ -190,7 +190,7 @@
             }
         }
         pop_html += "</tbody></table>"; 
-	    var render_html = name_html + pop_html + src_html;
+	var render_html = name_html + pop_html + src_html;
         console.log(render_html);
         return render_html;
     }
