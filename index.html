@@ -108,36 +108,38 @@
 	    }
     }
     var dataKeyMap = {
-        "japan_pop": "Japanese population",
-        "native_pop": "Native population",
-        "foreign_pop": '"Foreigner" population',
-        "taiwan_pop": "Taiwanese population",
-        "chinese_pop": "Chinese population",
-        "indian_pop": "Indian population"
+        "japan_pop": "Japanese",
+        "native_pop": "Native",
+        "foreign_pop": '"Foreigner"',
+        "taiwan_pop": "Taiwanese",
+        "chinese_pop": "Chinese",
+        "indian_pop": "Indian"
     }
     var mymap = L.map('mapid').setView([32.17, 126.42], 4);
     
     function renderFeature(f) {
         var name_html = '<h6 class="title is-6">' + f["name"]["sino"] + ' ' + f["name"]["eng"] + '</h6>&nbsp;';
-        var pop_html = '';
+        var src_html = '<p><a href="https://dl.ndl.go.jp/info:ndljp/pid/994851/' + f["source_pg"].toString() + 
+                       '">Link to source and further population information</a></p>';
+        var pop_html = '<table class="table is-striped is-hoverable is-fullwidth>' + 
+                       '<thead><tr><th>Type</th><th>Population</th></tr></thead>' +
+                       '<tfoot>' + src_html + '</tfoot><tbody>';
         var map_keys = Object.keys(dataKeyMap);
         for (var i=0; i<map_keys.length; i++) {
             var map_k = map_keys[i];
             if((map_k in f) && (f[map_k] != null)) {
 		        if((map_k == "native_pop") && (f["native_name"] != null)) {
-			        pop_html += '<p>' + f["native_name"] + ' population: ';
+			        pop_html += '<tr><th>' + f["native_name"] + '</th>';
                 }
                 else {
-                    pop_html += '<p>' + dataKeyMap[map_k] + ': ';
+                    pop_html += '<tr><th>' + dataKeyMap[map_k] + '</th>';
                 }
-                pop_html += f[map_k].toString() + '</p>'; 
+                pop_html += '<td>' + f[map_k].toString() + '</td>'; 
+                pop_html += '</tr>';
             }
         }
-	console.log(f);    
-        var src_html = '<p><a href="https://dl.ndl.go.jp/info:ndljp/pid/994851/' + f["source_pg"].toString() + 
-                       '">Link to source and further population information, if available</a></p>';
-        console.log(src_html);
-        return (name_html + pop_html + src_html);
+        pop_html += "</tbody></table>"
+        return (name_html + pop_html);
     }
 	  
 //   L.tileLayer('https://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png', {
