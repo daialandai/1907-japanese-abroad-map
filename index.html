@@ -72,7 +72,7 @@
           <p class="card-header-title has-text-weight-bold">What am I looking at?</p>
           <button class="card-header-icon" aria-label="show/hide" onclick="toggleCard(1)">
             <span class="icon">
-              <i class="fas fa-angle-down" aria-hidden="true"></i>
+              <i>V</i>
             </span>
           </button>
         </header>
@@ -132,11 +132,11 @@
     
     function renderFeature(f) {
         var name_html = '<h6 class="title is-6">' + f["name"]["sino"] + ' ' + f["name"]["eng"] + '</h6>&nbsp;';
-        var src_html = '<a href="https://dl.ndl.go.jp/info:ndljp/pid/994851/' + f["source_pg"].toString() + 
-                       '">Link to source and further population information</a>';
+        var src_html = '<p><a href="https://dl.ndl.go.jp/info:ndljp/pid/994851/' + f["source_pg"].toString() + 
+                       '">Link to source and further population information</a></p>';
         var pop_html = '<table class="table is-striped is-hoverable is-fullwidth>' + 
                        '<thead><tr><th>Type</th><th>Population</th></tr></thead>' +
-                       '<tfoot><tr><th>' + src_html + '</th></tr></tfoot><tbody>';
+                       '<tbody>';
         var map_keys = Object.keys(dataKeyMap);
         for (var i=0; i<map_keys.length; i++) {
             var map_k = map_keys[i];
@@ -152,7 +152,7 @@
             }
         }
         pop_html += "</tbody></table>"
-        return (name_html + pop_html);
+        return (name_html + pop_html + src_html);
     }
 	  
 //   L.tileLayer('https://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png', {
