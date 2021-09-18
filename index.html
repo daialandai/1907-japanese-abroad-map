@@ -71,9 +71,7 @@
         <header class="card-header">
           <p class="card-header-title has-text-weight-bold">What am I looking at?</p>
           <button class="card-header-icon" aria-label="show/hide" onclick="toggleCard(1)">
-            <span class="icon">
-              <i>V</i>
-            </span>
+            <span class="icon">V</span>
           </button>
         </header>
       </div>
@@ -152,7 +150,9 @@
             }
         }
         pop_html += "</tbody></table>"
-        return (name_html + pop_html + src_html);
+	    var render_html = name_html + pop_html + src_html;
+        console.log(render_html);
+        return render_html;
     }
 	  
 //   L.tileLayer('https://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png', {
