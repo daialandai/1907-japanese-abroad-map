@@ -52,7 +52,7 @@
     #showbutton {
       position: absolute;
       bottom: 3%;
-      right: 3%;
+      right: 1%;
     }
 	  
   </style>
@@ -125,10 +125,19 @@
         for (var i=0; i<map_keys.length; i++) {
             var map_k = map_keys[i];
             if((map_k in f) && (f[map_k] != null)) {
-                pop_html += '<p>' + dataKeyMap[map_k] + ':' + f[map_k].toString() + '</p>'; 
+		        if((map_k == "native_pop") && (f["native_name"] != null)) {
+			        pop_html += '<p>' + f["native_name"] + ' population:';
+                }
+                else {
+                    pop_html += '<p>' + dataKeyMap[map_k] + ':';
+                }
+                pop_html += f[map_k].toString() + '</p>'; 
             }
         }
-        return (name_html + pop_html);
+        var src_html = '<p><a href="https://dl.ndl.go.jp/info:ndljp/pid/994851/' + f["source_pg"].toString() + 
+                       'Link to source and further population information, if available</a></p>';
+        
+        return (name_html + pop_html + src_html);
     }
 	  
 //   L.tileLayer('https://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png', {
