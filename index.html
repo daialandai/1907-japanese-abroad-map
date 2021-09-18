@@ -67,6 +67,16 @@
     <div class="content">
       <p class="title">東亜各港日本人職業姓名録</p>
       <p class="subtitle">Record of the Names and Occupations of Japanese in the Various Ports of East Asia</p>
+      <div id="card_1" class="card is-fullwidth">
+        <header class="card-header">
+          <p class="card-header-title has-text-weight-bold">What am I looking at?</p>
+          <button class="card-header-icon" aria-label="show/hide" onclick="toggleCard(1)">
+            <span class="icon">
+              <i class="fas fa-angle-down" aria-hidden="true"></i>
+            </span>
+          </button>
+        </header>
+      </div>
       <p>明治四十年 1907</p>
       <p>曽根俊虎 Sone Toshitora</p>
       <p>Original source: <a href="https://dl.ndl.go.jp/info:ndljp/pid/994851">National Diet Library Digital Collections</a></p>	    
@@ -95,6 +105,9 @@
         xhr.open("GET", path, true);
         xhr.send();
     }
+    function toggleCard(n) {
+        console.log("toggle", n);
+    }
     function toggleShow(b) {
 	    var infobox = document.getElementById("infobox");
 	    var minibox = document.getElementById("minibox");
@@ -119,11 +132,11 @@
     
     function renderFeature(f) {
         var name_html = '<h6 class="title is-6">' + f["name"]["sino"] + ' ' + f["name"]["eng"] + '</h6>&nbsp;';
-        var src_html = '<p><a href="https://dl.ndl.go.jp/info:ndljp/pid/994851/' + f["source_pg"].toString() + 
-                       '">Link to source and further population information</a></p>';
+        var src_html = '<a href="https://dl.ndl.go.jp/info:ndljp/pid/994851/' + f["source_pg"].toString() + 
+                       '">Link to source and further population information</a>';
         var pop_html = '<table class="table is-striped is-hoverable is-fullwidth>' + 
                        '<thead><tr><th>Type</th><th>Population</th></tr></thead>' +
-                       '<tfoot>' + src_html + '</tfoot><tbody>';
+                       '<tfoot><tr><th>' + src_html + '</th></tr></tfoot><tbody>';
         var map_keys = Object.keys(dataKeyMap);
         for (var i=0; i<map_keys.length; i++) {
             var map_k = map_keys[i];
