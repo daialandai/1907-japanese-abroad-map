@@ -118,8 +118,7 @@
     var mymap = L.map('mapid').setView([32.17, 126.42], 4);
     
     function renderFeature(f) {
-        var name_html = '<h6 class="title is-6">' + f["name"]["sino"] + '</h6>&nbsp;' + 
-                   '<h6 class="subtitle is-6">' + f["name"]["eng"] + '</h6>';
+        var name_html = '<h6 class="title is-6">' + f["name"]["sino"] + ' ' + f["name"]["eng"] + '</h6>&nbsp;';
         var pop_html = '';
         var map_keys = Object.keys(dataKeyMap);
         for (var i=0; i<map_keys.length; i++) {
@@ -134,9 +133,10 @@
                 pop_html += f[map_k].toString() + '</p>'; 
             }
         }
+	console.log(f);    
         var src_html = '<p><a href="https://dl.ndl.go.jp/info:ndljp/pid/994851/' + f["source_pg"].toString() + 
                        'Link to source and further population information, if available</a></p>';
-        
+        console.log(src_html);
         return (name_html + pop_html + src_html);
     }
 	  
