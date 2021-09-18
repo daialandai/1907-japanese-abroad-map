@@ -38,6 +38,7 @@
       right: 3%;
       z-index: 2147483638;
       visibility: visible;	   
+      overflow: auto;
     }
     #minibox {
       position: absolute;
@@ -52,7 +53,7 @@
     #showbutton {
       position: absolute;
       bottom: 3%;
-      right: 1%;
+      right: 3%;
     }
 	  
   </style>
@@ -67,7 +68,7 @@
     <div class="content">
       <p class="title">東亜各港日本人職業姓名録</p>
       <p class="subtitle">Record of the Names and Occupations of Japanese in the Various Ports of East Asia</p>
-      <div id="card_1" class="card is-fullwidth">
+      <div id="card_1" class="card is-fullwidth is-hidden">
         <header class="card-header">
           <p class="card-header-title has-text-weight-bold">What am I looking at?</p>
           <button class="card-header-icon" aria-label="show/hide" onclick="toggleCard(1)">
@@ -75,41 +76,41 @@
           </button>
         </header>
       </div>
-	    <div id="card_2" class="card is-fullwidth">
+	    <div id="card_2" class="card is-fullwidth is-hidden">
         <header class="card-header">
-          <p class="card-header-title has-text-weight-bold">What am I looking at?</p>
+          <p class="card-header-title has-text-weight-bold">How does this map work?</p>
           <button class="card-header-icon" aria-label="show/hide" onclick="toggleCard(2)">
             <span class="icon">V</span>
           </button>
         </header>
       </div>
-      <div id="card_3" class="card is-fullwidth">
+      <div id="card_3" class="card is-fullwidth is-hidden">
         <header class="card-header">
-          <p class="card-header-title has-text-weight-bold">What am I looking at?</p>
+          <p class="card-header-title has-text-weight-bold">Where is this data from?</p>
           <button class="card-header-icon" aria-label="show/hide" onclick="toggleCard(3)">
             <span class="icon">V</span>
           </button>
         </header>
       </div>
-      <div id="card_4" class="card is-fullwidth">
+      <div id="card_4" class="card is-fullwidth is-hidden">
         <header class="card-header">
-          <p class="card-header-title has-text-weight-bold">What am I looking at?</p>
+          <p class="card-header-title has-text-weight-bold">Why does this data matter?</p>
           <button class="card-header-icon" aria-label="show/hide" onclick="toggleCard(4)">
             <span class="icon">V</span>
           </button>
         </header>
       </div>
-      <div id="card_5" class="card is-fullwidth">
+      <div id="card_5" class="card is-fullwidth is-hidden">
         <header class="card-header">
-          <p class="card-header-title has-text-weight-bold">What am I looking at?</p>
+          <p class="card-header-title has-text-weight-bold">What else does the source include?</p>
           <button class="card-header-icon" aria-label="show/hide" onclick="toggleCard(5)">
             <span class="icon">V</span>
           </button>
         </header>
       </div>
-      <div id="card_6" class="card is-fullwidth">
+      <div id="card_6" class="card is-fullwidth is-hidden">
         <header class="card-header">
-          <p class="card-header-title has-text-weight-bold">What am I looking at?</p>
+          <p class="card-header-title has-text-weight-bold">Who made this? Can I use this for (X)?</p>
           <button class="card-header-icon" aria-label="show/hide" onclick="toggleCard(6)">
             <span class="icon">V</span>
           </button>
@@ -145,6 +146,8 @@
     }
     function toggleCard(n) {
         console.log("toggle", n);
+        var card_t = document.getElementById("card_" + n.toString());
+        card_t.classList.toggle("is-hidden");      
     }
     function toggleShow(b) {
 	    var infobox = document.getElementById("infobox");
@@ -172,7 +175,7 @@
         var name_html = '<h6 class="title is-6">' + f["name"]["sino"] + ' ' + f["name"]["eng"] + '</h6>&nbsp;';
         var src_html = '<p><a href="https://dl.ndl.go.jp/info:ndljp/pid/994851/' + f["source_pg"].toString() + 
                        '">Link to source and further population information</a></p>';
-        var pop_html = '<table class="table is-striped is-fullwidth"><tbody>' + 
+        var pop_html = '<table class="table is-striped is-hoverable is-fullwidth"><tbody>' + 
                        '<thead><tr><th>Type</th><th>Population</th></tr></thead>' +
                        '<tbody>';
         var map_keys = Object.keys(dataKeyMap);
@@ -191,7 +194,7 @@
         }
         pop_html += "</tbody></table>"; 
 	var render_html = name_html + pop_html + src_html;
-        console.log(render_html);
+//         console.log(render_html);
         return render_html;
     }
 	  
